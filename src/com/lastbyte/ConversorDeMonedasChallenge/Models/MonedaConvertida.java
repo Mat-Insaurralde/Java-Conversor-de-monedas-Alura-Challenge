@@ -12,12 +12,17 @@ public class MonedaConvertida {
     private String monedaDestino;
 
     public MonedaConvertida(MonedaConvertidaApi monedaApi) {
+    try {
         this.precioBase = monedaApi.conversion_rate();
         this.resultadoDeConversion = monedaApi.conversion_result();
-        this.fechaDeUltimaActualizacion = monedaApi.time_last_update_utc().substring(5,monedaApi.time_last_update_utc().length()-9);
-        this.fechaDeProximaActualizacion = monedaApi.time_next_update_utc().substring(5,monedaApi.time_next_update_utc().length()-9);
+        this.fechaDeUltimaActualizacion = monedaApi.time_last_update_utc().substring(5, monedaApi.time_last_update_utc().length() - 9);
+        this.fechaDeProximaActualizacion = monedaApi.time_next_update_utc().substring(5, monedaApi.time_next_update_utc().length() - 9);
         this.moneda = monedaApi.base_code();
         this.monedaDestino = monedaApi.target_code();
+    }catch (Exception e){
+        System.out.println("Error al construir monedaConvertida: "+ e.getMessage());
+    }
+
     }
 
     public double getPrecioBase() {

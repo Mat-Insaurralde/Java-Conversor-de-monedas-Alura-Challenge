@@ -20,9 +20,13 @@ public class TodasLasMonedas {
     }
 
     public TodasLasMonedas(TodasLasMonedasApi monedasApi) {
+     try {
         this.fechaUltimaActualizacion = monedasApi.time_last_update_utc().substring(5, monedasApi.time_last_update_utc().length() - 9);
         this.fechaProximaActualizacion = monedasApi.time_last_update_utc().substring(5, monedasApi.time_last_update_utc().length() - 9);
         this.TodasLasMonedas = monedasApi.conversion_rates();
+    }catch (Exception e){
+        System.out.println("Error al construir Todas las monedas: "+ e.getMessage());
+    }
     }
 
 
