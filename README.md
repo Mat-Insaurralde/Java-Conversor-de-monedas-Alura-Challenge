@@ -4,13 +4,14 @@ Bienvenido/a al proyecto "conversor de monedas".
 Este es un projecto interesante en el que podras convertir el precio de tu moneda local a dolar y viceversa, Ademas estamos implementando nuevas funcionalidades.
 
 ## :camera_flash: Screenshots del projecto 
+<div style="display: flex; flex-wrap: wrap; gap: 20px;">
 <img alt="Projecto" height="300px" src="/src/Screenshots/Captura.JPG" width="300px"/>
 <img alt="Menu" height="300px" src="/src/Screenshots/Menu.JPG" width="300px"/>
 <img alt="Conversiones" height="300px" src="/src/Screenshots/Detalledelasconversiones.JPG" width="300px"/>
 <img alt="Historial" height="300px" src="/src/Screenshots/Historialdeconversiones.JPG" width="300px"/>
 <img alt="topMayor" height="300px" src="/src/Screenshots/topMayor.JPG" width="300px"/>
 <img alt="topMenor" height="300px" src="/src/Screenshots/topMenor.JPG" width="300px"/>
-
+</div>
 
 
 
