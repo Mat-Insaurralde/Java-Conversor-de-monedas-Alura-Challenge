@@ -27,20 +27,22 @@ public class Main {
         try {
             while (opcion != 0) {
 
-                System.out.println("*************************************************");
-                System.out.println("Sea bienvenido/a al Conversor de Monedas =]");
-                System.out.println("1)Dolar a Peso Argentino");
-                System.out.println("2)Peso argentino a Dolar");
-                System.out.println("3)Dolar a Real Brasileño");
-                System.out.println("4)Real Brasileño a Dolar");
-                System.out.println("5)Dolar a Peso Colombiano");
-                System.out.println("6)Peso Colombiano a Dolar");
-                System.out.println("7)Top 10 de mayor cotizacion");
-                System.out.println("8)Top 10 de menor cotizacion");
-                System.out.println("9)Historial de mis conversiones");
-                System.out.println("0)Salir");
+                System.out.println("------------------------------------------");
+                System.out.println("Bienvenido/a al Conversor de Monedas ");
+                System.out.println("");
+                System.out.println("1) Dolar a Peso Argentino");
+                System.out.println("2) Peso argentino a Dolar");
+                System.out.println("3) Dolar a Real Brasileño");
+                System.out.println("4) Real Brasileño a Dolar");
+                System.out.println("5) Dolar a Peso Colombiano");
+                System.out.println("6) Peso Colombiano a Dolar");
+                System.out.println("7) Top 10 de mayor cotizacion");
+                System.out.println("8) Top 10 de menor cotizacion");
+                System.out.println("9) Historial de mis conversiones");
+                System.out.println("0) Salir");
+                System.out.println("");
                 System.out.println("Elija una opcion");
-                System.out.println("*************************************************");
+                System.out.println("------------------------------------------");
 
 
                 opcion = scanner.nextInt();
