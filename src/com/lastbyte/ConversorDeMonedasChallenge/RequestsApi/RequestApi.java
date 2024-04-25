@@ -1,7 +1,7 @@
 package com.lastbyte.ConversorDeMonedasChallenge.RequestsApi;
 import com.google.gson.Gson;
 import com.lastbyte.ConversorDeMonedasChallenge.Records.MonedaConvertidaApi;
-import com.lastbyte.ConversorDeMonedasChallenge.Records.MonedasApi;
+import com.lastbyte.ConversorDeMonedasChallenge.Records.TodasLasMonedasApi;
 import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpClient;
@@ -27,7 +27,7 @@ public class RequestApi {
 
 
 
-    public MonedasApi GetAllCoins() throws IOException, InterruptedException {
+    public TodasLasMonedasApi GetAllCoins() throws IOException, InterruptedException {
 
         //Generamos el pedido HttpRequest en Java nos brinda un
         // control detallado sobre los parámetros de nuestras solicitudes
@@ -37,7 +37,7 @@ public class RequestApi {
         HttpResponse<String> response = client
                 .send(request, HttpResponse.BodyHandlers.ofString());
 
-        return new Gson().fromJson(response.body(), MonedasApi.class);
+        return new Gson().fromJson(response.body(), TodasLasMonedasApi.class);
 
     }
 
