@@ -46,4 +46,4 @@ Este es un projecto interesante en el que podras convertir el precio de tu moned
 
 ## Contacto
 
-**LinkedIn :** [Javier Matias Insaurralde :desktop_computer:](www.linkedin.com/in/javier-matias-insaurralde-3aa783274)
+**LinkedIn :** [Javier Matias Insaurralde :desktop_computer:](https://www.linkedin.com/in/javier-matias-insaurralde-3aa783274/)
